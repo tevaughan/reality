@@ -4,6 +4,7 @@
 \documentclass[twocolumn]{article}
 
 \usepackage{fancyhdr}
+\usepackage{ftnright}
 \usepackage{graphicx}
 \usepackage{lastpage}
 \usepackage{natbib}
@@ -64,6 +65,12 @@
    \includegraphics[width=0.85\textwidth]{logo}
    \end{flushright}
    \end{minipage}%
+}
+
+\renewcommand{\footnoterule}{%
+   \kern -3pt
+   \hrule width 0.5 \columnwidth
+   \kern 2.6pt
 }
 
 \begin{document}
@@ -309,8 +316,6 @@ Formal cause is to material cause as the actual is to the potential.
 
 Existence is to essence as the actual is to the potential.
 
-\newpage
-
 \bibliographystyle{plainnat}
 
 \begin{thebibliography}{}
@@ -324,7 +329,7 @@ Existence is to essence as the actual is to the potential.
       Carroll, S.\ \ ``The Reality of Time.''\footnote{%
          \url{http://www.preposterousuniverse.com/blog/2015/04/03/the-reality-of-time}%
       }
-      On Carroll's blog (\url{http://preposterousuniverse.com}).  2015.
+      On Carroll's blog.\footnote{\url{http://preposterousuniverse.com}}  2015.
 
    \bibitem[Chakravartty(2016)Chakravartty]{c2016}
       Chakravartty, A.\ \ ``Scientific Realism.''\footnote{%
@@ -394,8 +399,6 @@ Existence is to essence as the actual is to the potential.
    \end{small}
 
 \end{thebibliography}
-
-\onecolumn
 
 \input{fdl-1.3}
 
